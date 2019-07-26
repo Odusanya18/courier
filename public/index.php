@@ -12,6 +12,7 @@ if ($_SERVER['APP_DEBUG']) {
     Debug::enable();
 } else {
     $_SERVER['HTTPS'] = 'on';
+    $_APP['HTTPS'] = 'on';
 }
 
 $kernel = new Kernel($_SERVER['APP_ENV'], (bool) $_SERVER['APP_DEBUG']);
