@@ -17,15 +17,10 @@ $request = Request::createFromGlobals();
 
 // tell Symfony about your reverse proxy
 Request::setTrustedProxies(
-// the IP address (or range) of your proxy
-    ['192.0.0.1', $request->server->get('REMOTE_ADDR')],
+    ['127.0.0.1', '172.0.0.0/8', '10.0.0.0/8', '192.0.0.1', $request->server->get('REMOTE_ADDR')],
 
-    // trust *all* "X-Forwarded-*" headers
     Request::HEADER_X_FORWARDED_PROTO
 );
-//if (!$request->server->has('APP_DEBUG')) {
-//    $request->server->set('HTTPS', 'on');
-//}
 
 $response = $kernel->handle($request);
 $response->send();
