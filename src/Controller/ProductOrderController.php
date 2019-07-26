@@ -38,7 +38,7 @@ class ProductOrderController extends AbstractController
             $entityManager->persist($productOrder);
             $entityManager->flush();
 
-            return $this->redirectToRoute('home');
+            return $this->redirectToRoute('payment_new');
         }
 
         return $this->render('product_order/new.html.twig', [
