@@ -72,11 +72,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="128">
               <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nginx_app.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -129,7 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" />
         <option value="$PROJECT_DIR$/assets/js/order-create.js" />
         <option value="$PROJECT_DIR$/assets/js/productOrderCreate.js" />
         <option value="$PROJECT_DIR$/assets/js/store.js" />
@@ -180,6 +188,7 @@
         <option value="$PROJECT_DIR$/src/EventSubscriber/MailSenderSubscriber.php" />
         <option value="$PROJECT_DIR$/../courier-db.sql" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/nginx_app.conf" />
       </list>
     </option>
   </component>
@@ -361,12 +370,12 @@
       <workItem from="1562356233718" duration="242000" />
       <workItem from="1564065899641" duration="5286000" />
       <workItem from="1564087758185" duration="10259000" />
-      <workItem from="1564136488097" duration="404000" />
+      <workItem from="1564136488097" duration="1092000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124512000" />
+    <option name="totallyTimeSpent" value="125200000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -399,7 +408,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/payment/_form.html.twig" />
     <entry file="file://$PROJECT_DIR$/src/Entity/Payment.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -739,6 +747,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nginx_app.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
         </state>
       </provider>
     </entry>
