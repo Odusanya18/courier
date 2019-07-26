@@ -302,8 +302,8 @@
                         <div class="column">
                             <div class="ui segment">
                                 <div class="ui basic segment">
-                                    <img class="ui centered medium image" src="assets/img/shopping.png">
-                                    <div class="ui header">{{ post.title }}</div>
+                                    <a href="{{ path('post', {'id': post.id}) }}"><img class="ui centered medium image" src="assets/img/shopping.png">
+                                    <div class="ui header">{{ post.title }}</div></a>
                                     <div class="metadata">
                                         <span class="date">{{ post.description }}</span>
                                     </div>
@@ -395,7 +395,7 @@
                             </div>
                             <div class="ui basic segment">
                                 <div class="ui huge header" style="color: white">Email Us.</div>
-                                <p class="content" style="color: white">admin@chinadojo.com</p>
+                                <p class="content" style="color: white">chinadojoprocurement@gmail.com</p>
                             </div>
                         </div>
                     </div>
