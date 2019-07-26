@@ -43,7 +43,7 @@ use Symfony\Component\Security\Core\User\User;
  *         "get",
  *     },
  *     itemOperations={
- *         "get",
+ *         "get", "delete"
  *     },
  * )
  * @Vich\Uploadable
