@@ -10,10 +10,7 @@ if ($_SERVER['APP_DEBUG']) {
     umask(0000);
 
     Debug::enable();
-}
-
-// Detect cloudflare HTTPS
-if (isset($_SERVER['HTTP_CF_VISITOR']) && json_decode($_SERVER['HTTP_CF_VISITOR'])->scheme == 'https'){
+} else {
     $_SERVER['HTTPS'] = 'on';
 }
 
