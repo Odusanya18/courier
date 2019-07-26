@@ -10,13 +10,14 @@ if ($_SERVER['APP_DEBUG']) {
     umask(0000);
 
     Debug::enable();
-} else {
-    $_SERVER['HTTPS'] = 'on';
-    $_APP['HTTPS'] = 'on';
 }
 
 $kernel = new Kernel($_SERVER['APP_ENV'], (bool) $_SERVER['APP_DEBUG']);
 $request = Request::createFromGlobals();
+
+if (!$request->server->has('APP_DEBUG')) {
+    $request->server->set('HTTPS', 'on');
+}
 
 // tell Symfony about your reverse proxy
 Request::setTrustedProxies(
