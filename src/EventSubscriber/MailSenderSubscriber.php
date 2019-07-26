@@ -10,6 +10,13 @@ use Doctrine\ORM\Events;
 
 class MailSenderSubscriber implements EventSubscriber
 {
+    private $mailer;
+
+    public function __construct(\Swift_Mailer $mailer)
+    {
+        $this->mailer = $mailer;
+    }
+
     public function getSubscribedEvents()
     {
         return [
@@ -28,7 +35,7 @@ class MailSenderSubscriber implements EventSubscriber
         $this->index($args);
     }
 
-    public function index(LifecycleEventArgs $args, \Swift_Mailer $mailer)
+    public function index(LifecycleEventArgs $args)
     {
         $entity = $args->getObject();
 
@@ -36,11 +43,11 @@ class MailSenderSubscriber implements EventSubscriber
         if ($entity instanceof ProductOrder) {
             $entityManager = $args->getObjectManager();
             $message = (new \Swift_Message(sprintf('New order received %s', $entity->getFullname())))
-                ->setFrom('send@example.com')
-                ->setTo('recipient@example.com')
-                ->setBody("Hello,\n\nWe just got your newly placed order, we will contact you as soon as possible.\nThanks for your patien")
+                ->setFrom('chinadojoprocurement@gmail.com')
+                ->setTo($entity->getEmail())
+                ->setBody("Hello,\n\nWe just got your newly placed order, we will contact you as soon as possible.\nThanks for your patience.")
             ;
-            $mailer->send($message);
+            $this->mailer->send($message);
         }
     }
 }
