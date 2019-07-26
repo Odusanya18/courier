@@ -34,37 +34,77 @@
                     <input name="product_order_products[0][link]" type="text">
                 </div>
                 <div class="field">
-                    <label for="product_order_products[0][name]">Name</label>
+                    <label for="product_order_products[0][name]">Description</label>
                     <input name="product_order_products[0][name]" type="text">
                 </div>
             </div>
+        <div class="two fields">
+            <div class="field">
+                <label for="product_order_products[1][link]">Product link</label>
+                <input name="product_order_products[1][link]" type="text">
+            </div>
+            <div class="field">
+                <label for="product_order_products[1][name]">Description</label>
+                <input name="product_order_products[1][name]" type="text">
+            </div>
+        </div>
+        <div class="two fields">
+            <div class="field">
+                <label for="product_order_products[2][link]">Product link</label>
+                <input name="product_order_products[2][link]" type="text">
+            </div>
+            <div class="field">
+                <label for="product_order_products[2][name]">Description</label>
+                <input name="product_order_products[2][name]" type="text">
+            </div>
+        </div>
+        <div class="two fields">
+            <div class="field">
+                <label for="product_order_products[3][link]">Product link</label>
+                <input name="product_order_products[3][link]" type="text">
+            </div>
+            <div class="field">
+                <label for="product_order_products[3][name]">Description</label>
+                <input name="product_order_products[3][name]" type="text">
+            </div>
+        </div>
+        <div class="two fields">
+            <div class="field">
+                <label for="product_order_products[4][link]">Product link</label>
+                <input name="product_order_products[4][link]" type="text">
+            </div>
+            <div class="field">
+                <label for="product_order_products[4][name]">Description</label>
+                <input name="product_order_products[4][name]" type="text">
+            </div>
+        </div>
 
             <br>
-            <div class="field">
-                <label for="image">UPLOAD IMAGE OF PRODUCT</label>
-                <input id="files" name="image" type="file" >
-                <input id="file-id" name="product_order_products[0][image]" hidden type="text">
-            </div>
-        <script>
-            const entrypoint = document.getElementById('api-entrypoint').innerText;
-            let input = document.getElementById('files');
-            input.addEventListener('change', uploadImage);
+{#            <div class="field">#}
+{#                <label for="image">UPLOAD IMAGE OF PRODUCT</label>#}
+{#                <input id="files" name="image" type="file" >#}
+{#                <input id="file-id" name="product_order_products[0][image]" hidden type="text">#}
+{#            </div>#}
+{#        <script>#}
+{#            const entrypoint = document.getElementById('api-entrypoint').innerText;#}
+{#            let input = document.getElementById('files');#}
+{#            input.addEventListener('change', uploadImage);#}
 
-            function uploadImage() {
-                value = input.files[0];
+{#            function uploadImage() {#}
+{#                value = input.files[0];#}
 
-                if (value instanceof File) {
-                    const body = new FormData();
-                    body.append('file', value);
+{#                if (value instanceof File) {#}
+{#                    const body = new FormData();#}
+{#                    body.append('file', value);#}
 
-                    const resp = fetch(`${entrypoint}/api/media_objects`, { body, method: 'POST' })
-                        .then(response => response.json());
-                    resp.then(data => {
-                        document.getElementById("file-id").value = data.id;
-                    });
-                }
-            }
-        </script>
+{#                    const resp = fetch(`${entrypoint}/api/media_objects`, { body, method: 'POST' })#}
+{#                        .then(response => response.json());#}
+{#                    resp.then(data => {#}
+{#                        document.getElementById("file-id").value = data.id;#}
+{#                    });#}
+{#                }#}
+{#            }#}
+{#        </script>#}
         <div class="ui basic center aligned segment">
             <button class="ui submit blue button">{{ button_label|default('Submit Form') }}</button>
         </div>
