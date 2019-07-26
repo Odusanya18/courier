@@ -21,11 +21,11 @@ Request::setTrustedProxies(
     ['192.0.0.1', $request->server->get('REMOTE_ADDR')],
 
     // trust *all* "X-Forwarded-*" headers
-    Request::HEADER_X_FORWARDED_ALL
+    Request::HEADER_X_FORWARDED_PROTO
 );
-if (!$request->server->has('APP_DEBUG')) {
-    $request->server->set('HTTPS', 'on');
-}
+//if (!$request->server->has('APP_DEBUG')) {
+//    $request->server->set('HTTPS', 'on');
+//}
 
 $response = $kernel->handle($request);
 $response->send();
