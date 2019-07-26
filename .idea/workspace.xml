@@ -51,7 +51,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/home/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
@@ -60,6 +60,15 @@
                 <element signature="e#592#597#0#Twig" expanded="true" />
                 <element signature="e#685#690#0#Twig" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/payment/new.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -130,7 +139,6 @@
         <option value="$PROJECT_DIR$/src/Controller/Controller.php" />
         <option value="$PROJECT_DIR$/public/neworder.html" />
         <option value="$PROJECT_DIR$/templates/payment/_form.html.twig" />
-        <option value="$PROJECT_DIR$/templates/payment/new.html.twig" />
         <option value="$PROJECT_DIR$/src/Entity/Payment.php" />
         <option value="$PROJECT_DIR$/src/Controller/CreateProductObjectAction.php" />
         <option value="$PROJECT_DIR$/src/Controller/CreateMediaObjectAction.php" />
@@ -163,6 +171,7 @@
         <option value="$PROJECT_DIR$/src/EventSubscriber/MailSenderSubscriber.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/templates/home/base.html.twig" />
+        <option value="$PROJECT_DIR$/templates/payment/new.html.twig" />
       </list>
     </option>
   </component>
@@ -306,6 +315,12 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="courier" type="b2602c69:ProjectViewProjectNode" />
+              <item name="courier" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="payment" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -358,12 +373,12 @@
       <workItem from="1562356233718" duration="242000" />
       <workItem from="1564065899641" duration="5286000" />
       <workItem from="1564087758185" duration="10259000" />
-      <workItem from="1564136488097" duration="4342000" />
+      <workItem from="1564136488097" duration="4941000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128450000" />
+    <option name="totallyTimeSpent" value="129049000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -407,13 +422,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1303">
           <caret line="289" lean-forward="true" selection-start-line="289" selection-end-line="289" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/payment/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="47" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -742,6 +750,13 @@
             <element signature="e#592#597#0#Twig" expanded="true" />
             <element signature="e#685#690#0#Twig" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/payment/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
         </state>
       </provider>
     </entry>
