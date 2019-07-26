@@ -14,7 +14,6 @@ security:
             security: false
         api:
             pattern: ^/(api/)(?!media_objects)
-            anonymous: true
             stateless: true
             provider: backend_users
             guard:

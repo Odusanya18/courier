@@ -54,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/home/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="72" column="88" lean-forward="true" selection-start-line="72" selection-start-column="88" selection-end-line="72" selection-end-column="88" />
+            <state relative-caret-position="228">
+              <caret line="111" column="88" lean-forward="true" selection-start-line="111" selection-start-column="88" selection-end-line="111" selection-end-column="88" />
               <folding>
                 <element signature="e#592#597#0#Twig" expanded="true" />
                 <element signature="e#685#690#0#Twig" expanded="true" />
@@ -65,10 +65,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/payment/new.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+            <state relative-caret-position="206">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/product_order/new.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="19" column="56" lean-forward="true" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+              <folding>
+                <element signature="e#1163#1174#0#Twig" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,18 +122,19 @@
       <find>^/(api)(?!/(media_objects|))</find>
       <find>white</find>
       <find>payment</find>
+      <find>Tugrow1688</find>
     </findStrings>
     <replaceStrings>
       <replace>ProductOrder</replace>
       <replace>rder</replace>
       <replace>width</replace>
-      <replace>ChinaDojo</replace>
       <replace>Payment</replace>
       <replace>read</replace>
       <replace>image_write</replace>
       <replace>media_object_post</replace>
       <replace>media_object_read</replace>
       <replace>grey</replace>
+      <replace>ChinaDojo</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -155,11 +177,9 @@
         <option value="$PROJECT_DIR$/assets/js/authProvider.js" />
         <option value="$PROJECT_DIR$/config/packages/api_platform.yaml" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/config/packages/security.yaml" />
         <option value="$PROJECT_DIR$/templates/home/generic.html.twig" />
         <option value="$PROJECT_DIR$/src/Entity/Post.php" />
         <option value="$PROJECT_DIR$/src/Entity/Page.php" />
-        <option value="$PROJECT_DIR$/templates/product_order/new.html.twig" />
         <option value="$PROJECT_DIR$/src/Form/ProductOrderType.php" />
         <option value="$PROJECT_DIR$/src/Entity/ProductOrder.php" />
         <option value="$PROJECT_DIR$/assets/js/admin.js" />
@@ -170,8 +190,10 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/EventSubscriber/MailSenderSubscriber.php" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/templates/home/base.html.twig" />
+        <option value="$PROJECT_DIR$/templates/product_order/new.html.twig" />
         <option value="$PROJECT_DIR$/templates/payment/new.html.twig" />
+        <option value="$PROJECT_DIR$/templates/home/base.html.twig" />
+        <option value="$PROJECT_DIR$/config/packages/security.yaml" />
       </list>
     </option>
   </component>
@@ -307,6 +329,17 @@
             <path>
               <item name="courier" type="b2602c69:ProjectViewProjectNode" />
               <item name="courier" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="courier" type="b2602c69:ProjectViewProjectNode" />
+              <item name="courier" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="courier" type="b2602c69:ProjectViewProjectNode" />
+              <item name="courier" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -320,6 +353,12 @@
               <item name="courier" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="payment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="courier" type="b2602c69:ProjectViewProjectNode" />
+              <item name="courier" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="product_order" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -373,12 +412,12 @@
       <workItem from="1562356233718" duration="242000" />
       <workItem from="1564065899641" duration="5286000" />
       <workItem from="1564087758185" duration="10259000" />
-      <workItem from="1564136488097" duration="4941000" />
+      <workItem from="1564136488097" duration="5823000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129049000" />
+    <option name="totallyTimeSpent" value="129931000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -588,13 +627,6 @@
     <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/PaymentController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="496">
@@ -628,16 +660,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/packages/ewz_recaptcha.yaml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/product_order/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
-          <folding>
-            <element signature="e#1163#1174#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/excelwebzone/recaptcha-bundle/src/Form/Type/EWZRecaptchaType.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -742,10 +764,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/product_order/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="19" column="56" lean-forward="true" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+          <folding>
+            <element signature="e#1163#1174#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/payment/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/home/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="72" column="88" lean-forward="true" selection-start-line="72" selection-start-column="88" selection-end-line="72" selection-end-column="88" />
+        <state relative-caret-position="228">
+          <caret line="111" column="88" lean-forward="true" selection-start-line="111" selection-start-column="88" selection-end-line="111" selection-end-column="88" />
           <folding>
             <element signature="e#592#597#0#Twig" expanded="true" />
             <element signature="e#685#690#0#Twig" expanded="true" />
@@ -753,10 +792,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/payment/new.html.twig">
+    <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+        <state relative-caret-position="164">
+          <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
         </state>
       </provider>
     </entry>
