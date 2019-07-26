@@ -13,7 +13,7 @@ security:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
         api:
-            pattern: ^/(api/)(?!media_objects)
+            pattern: ^/api/
             stateless: true
             provider: backend_users
             guard:
