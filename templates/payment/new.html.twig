@@ -1,0 +1,55 @@
+{% extends 'home/base.html.twig' %}
+
+{% block title %}New Payment{% endblock %}
+
+{% block body %}
+
+    <div class="ui fluid container" style="background-color: lightgray">
+        <div class="ui basic segment">
+            <h1 class="ui huge header">Payment Methods</h1><br>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="ui container">
+        <div class="ui padded grid">
+            <div class="two column row">
+                <div class="column">
+                    <div class="ui basic center aligned segment">
+                        <img src="assets/img/bank.png" class="ui image">
+                        <img src="assets/img/logo-full.png" class="ui image">
+                    </div>
+                </div>
+                <div class="column">
+                    <p class="ui header">China Dojo Supports Nigerian Local Bank Transfer and Other International Payment Methods.</p>
+                    <br>
+                    <p>BANK DETAILS</p>
+                    <p>ACCOUNT NAME: </p>
+                    <p>ACCOUNT NUMBER: </p>
+                    <p>BANK NAME: </p>
+                    <p>NOTE: <em>All payments should be made to the above account details only.</em></p>
+                    <br><br>
+                    <p class="ui header"><em>International Payment Methods</em></p>
+                    <p><em>PayPal: </em></p>
+                    <p>If you need payment by <em>payoneer, </em>please contact us for account details</p>
+                </div>
+            </div>
+        </div>
+
+
+        <h2 align="center" class="ui horizontal divider header"><em>Payment Confirmation</em></h2>
+        <div class="ui container">
+            <div class="ui segment">
+                    {{ form_start(form, {'attr':{'class':'ui form'}}) }}
+                    {{ form_widget(form) }}
+                    <div class="ui basic center aligned segment">
+                        <button class="ui submit blue button">{{ button_label|default('Send Payment Confirmation') }}</button>
+                    </div>
+
+                {{ form_end(form) }}
+            </div>
+        </div>
+        <br>
+    </div>
+{% endblock %}

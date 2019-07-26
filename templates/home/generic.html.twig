@@ -1,0 +1,18 @@
+{% extends 'home/base.html.twig' %}
+
+{% block title %}{{ resource.title }}{% endblock %}
+
+{% block body %}
+    <div class="ui fluid container" style="background-color: lightgray">
+        <div class="ui basic segment">
+            <h1 class="ui huge header">{{ resource.title }}</h1><br>
+        </div>
+    </div>
+
+
+    <div class="ui container">
+        <br>
+        {{ resource.content|raw }}
+        <br>
+    </div>
+{% endblock %}
