@@ -12,6 +12,11 @@ if ($_SERVER['APP_DEBUG']) {
     Debug::enable();
 }
 
+// Detect cloudflare HTTPS
+if (isset($_SERVER['HTTP_CF_VISITOR']) && json_decode($_SERVER['HTTP_CF_VISITOR'])->scheme == 'https'){
+    $_SERVER['HTTPS'] = 'on';
+}
+
 $kernel = new Kernel($_SERVER['APP_ENV'], (bool) $_SERVER['APP_DEBUG']);
 $request = Request::createFromGlobals();
 
