@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/semantic/semantic.min.css') }}">
+    {% block stylesheets %}{% endblock %}
+</head>
+<body>
+<div id="api-entrypoint" style="visibility: hidden">{{ url('home') }}</div>
+    <header>
+        <div style="padding-top: 40px"></div>
+        <div class="ui fluid container" style="background-color: black; color: #8a8a8a;">
+            <div class="ui inverted secondary mini menu">
+                <a href="{{ url('admin') }}" class="item" style="color: #8a8a8a">SIGN IN</a>
+                <a href="{{ url('admin') }}" class="item" style="color: #8a8a8a">REGISTER</a>
+                <div class="right floated item">
+                    <a class="ui white right corner label">
+                        <i class="ui add icon"></i>
+                    </a>
+                    <a href="//facebook.com/thechinadojo" class="item">
+                        <i class="ui facebook icon"></i>
+                    </a>
+                    <a href="//twitter.com/thechinadojo" class="item">
+                        <i class="ui twitter icon"></i>
+                    </a>
+                    <a href="//google.com/?query=thechinadojo" class="item">
+                        <i class="ui google icon"></i>
+                    </a>
+                    <a href="//linkedin.com/in/thechinadojo" class="item">
+                        <i class="ui linkedin icon"></i>
+                    </a>
+                    <a href="//instagram.com/thechinadojo" class="item">
+                        <i class="ui instagram icon"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="ui inverted fixed menu">
+                <div class="left item">
+                    <a href="{{ url('home') }}"><img src="{{ asset('assets/img/logo.png') }}" alt="logo" class="ui small image"></a>
+                </div>
+                <div class="right item">
+                    <div class="ui basic buittons">
+                        <a class="ui teal button" href="{{ url('product_order_new') }}">NEW ORDER</a>
+                        <a class="ui teal button" href="//www.kuaidi100.com" rel="noopener" target="_blank">TRACKING</a>
+                        <a href="{{ url('page', {'id':4}) }}" class="ui teal button">SERVICES</a>
+                        <a href="{{ url('page', {'id':3}) }}" class="ui teal button">CONTACT US</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+{% block body %}{% endblock %}
+    <footer>
+        <div class="ui inverted fluid container" style="background-color: #27292a; color: #8a8a8a">
+            <div class="ui basic segment">
+                <div class="ui basic segment">
+                    <div class="ui grid">
+                        <div class="four column row">
+                            <div class="column">
+                                <hr>
+                                <div class="ui header" style="color: #8a8a8a">PAGES</div>
+                                <div class="ui list">
+                                    <a class="item" href="//www.kuaidi100.com" rel="noopener" target="_blank">Track Your Order</a>
+                                        {% for page in pages() %}
+                                            <a href="{{ url('page', {'id':page.id}) }}" class="item">{{ page.title }}</a>
+                                        {% endfor %}
+                                </div>
+                            </div>
+                            <div class="column">
+                                <hr>
+                                <div class="ui header" style="color: #8a8a8a">INFO</div>
+                                <div class="ui list">
+                                    <a href="{{ url('payment_new') }}" class="item">Payment Methods</a>
+                                    <a href="{{ url('page', {'id':5}) }}" class="item">Terms of Service</a>
+                                    <a href="{{ url('page', {'id':6}) }}" class="item">Privacy Policy</a>
+                                    <a href="{{ url('page', {'id':7}) }}" class="item">FAQ</a>
+                                    <a href="" class="item">Blog</a>
+                                    <a href="{{ url('page', {'id':9}) }}" class="item">How it Works</a>
+                                    <a href="{{ url('page', {'id':10}) }}" class="item">Shipping Rates</a>
+{#                                    <a href="" class="item">Complaint</a>#}
+                                </div>
+                            </div>
+                            <div class="column">
+                                <hr>
+                                <div class="ui header" style="color: #8a8a8a">PARTNERS</div>
+                                <div class="ui content">
+                                    <i class="ui visa icon"></i>
+                                    <i class="ui paypal icon"></i>
+                                    <i class="ui amazon icon"></i>
+                                    <i class="ui bitcoin icon"></i>
+                                    <i class="ui amex icon"></i>
+                                    <i class="ui ethereum icon"></i>
+                                    <i class="ui viacoin icon"></i>
+                                    <i class="ui mastercard icon"></i>
+                                    <i class="ui money icon"></i>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <hr>
+                                <div class="ui header" style="color: #8a8a8a">DISCLAIMER</div>
+                                <div class="content">
+                                    <p>We are not part of www.1688.com. ChinaDojo is an independent agency owned by SAMGROW INTERNATIONAL limited</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui fluid container" style="background-color: black; color: #8a8a8a">
+            <div class="ui center aligned segment" style="background-color: black; color: #8a8a8a">
+                <p align="center"><i class="ui copyright icon"></i>ChinaDojo</p>
+                <p></p>
+                <div class="ui horizontal centered list">
+                    <a href="{{ url('product_order_new') }}" class="item">NEW ORDER</a>
+                    <a href="" class="item">HELP CENTER</a>
+                    <a  href="//www.kuaidi100.com" rel="noopener" target="_blank" class="item">TRACKING</a>
+                    <a href="{{ url('page', {'id':4}) }}" class="item">SERVICES</a>
+                    <a href="{{ url('page', {'id':3}) }}" class="item">CONTACT US</a>
+                </div>
+                <p></p>
+                <div class="ui horizontal list">
+                    <a href="//facebook.com/thechinadojo" class="item">
+                        <i class="ui facebook icon" style="color: grey"></i>
+                    </a>
+                    <a href="//twitter.com/thechinadojo" class="item">
+                        <i class="ui twitter icon" style="color: grey"></i>
+                    </a>
+                    <a href="//google.com/?query=thechinadojo" class="item">
+                        <i class="ui google icon" style="color: grey"></i>
+                    </a>
+                    <a href="//linkedin.com/in/thechinadojo" class="item">
+                        <i class="ui linkedin icon" style="color: grey"></i>
+                    </a>
+                    <a href="//instagram.com/thechinadojo" class="item">
+                        <i class="ui instagram icon" style="color: grey"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="{{ asset('assets/css/semantic/semantic.min.js') }}"></script>
+{% block javascripts %}{% endblock %}
+</body>
+</html>

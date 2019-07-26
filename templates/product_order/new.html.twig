@@ -1,0 +1,75 @@
+{% extends 'home/base.html.twig' %}
+
+{% block title %}New ProductOrder{% endblock %}
+
+{% block body %}
+<div class="ui fluid container" style="background-color: lightgray">
+    <div class="ui basic segment">
+        <h1 class="ui huge header">NEW ORDER</h1><br>
+    </div>
+</div>
+
+<div class="ui container">
+    <br>
+    <p>Welcome to our new order form , please read instructions very well before proceeding</p>
+    <p>–	This form is meant for you to copy and paste link from 1688, taobao, tmall etc with full description for us to work your quotation</p>
+    <p>–	Please kindly drop link you know your capacity can pay, don’t drop too many link and later later ask us to adjust because we are working with time.</p>
+    <p>–	We want to reduce the rate of unserious clients, submitting multiple forms, etc.so you are to pay a sum of N3,000 commitment fee before submitting your form, without this payment we will not attend to your form NOTE: THIS MONEY IS REFUNDABLE WHEN YOU PROCEED AND PAY YOUR ORDER you will substrate it when you are to pay for your order and IT </p>
+    <p>NOT REFUNDABLE WHEN YOU FAIL TO PROCEED AND PAY FOR YOUR ORDER.. <a href="{{ path('payment_new') }}">(click here for payment details)</a></p>
+    <br>
+    <p>–	The bank account name you pay us from must be same as your name on Tugrow1688, third party transfer , paga, sms code transfer not accepted, direct bank payment and mobile transfer only.</p>
+    <p>–	We will worked your within 12- 24hrs from when you submit it</p>
+    <p>Good luck to your journey of stress free shopping</p>
+    <br>
+
+    <div class="ui segment">
+            {{ form_start(form, {'attr':{'class':'ui form'}}) }}
+            {{ form_widget(form) }}
+            <br>
+            <div class="ui attached button">Please Add The Product Links With Description Below</div>
+            <br>
+            <div class="two fields">
+                <div class="field">
+                    <label for="product_order_products[0][link]">Product link</label>
+                    <input name="product_order_products[0][link]" type="text">
+                </div>
+                <div class="field">
+                    <label for="product_order_products[0][name]">Name</label>
+                    <input name="product_order_products[0][name]" type="text">
+                </div>
+            </div>
+
+            <br>
+            <div class="field">
+                <label for="image">UPLOAD IMAGE OF PRODUCT</label>
+                <input id="files" name="image" type="file" >
+                <input id="file-id" name="product_order_products[0][image]" hidden type="text">
+            </div>
+        <script>
+            const entrypoint = document.getElementById('api-entrypoint').innerText;
+            let input = document.getElementById('files');
+            input.addEventListener('change', uploadImage);
+
+            function uploadImage() {
+                value = input.files[0];
+
+                if (value instanceof File) {
+                    const body = new FormData();
+                    body.append('file', value);
+
+                    const resp = fetch(`${entrypoint}/api/media_objects`, { body, method: 'POST' })
+                        .then(response => response.json());
+                    resp.then(data => {
+                        document.getElementById("file-id").value = data.id;
+                    });
+                }
+            }
+        </script>
+        <div class="ui basic center aligned segment">
+            <button class="ui submit blue button">{{ button_label|default('Submit Form') }}</button>
+        </div>
+        {{ form_end(form) }}
+    </div>
+</div>
+    <br>
+{% endblock %}
