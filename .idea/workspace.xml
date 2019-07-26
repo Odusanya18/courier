@@ -48,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/home/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="224" column="34" lean-forward="true" selection-start-line="224" selection-start-column="34" selection-end-line="224" selection-end-column="120" />
+            <state relative-caret-position="281">
+              <caret line="230" column="45" selection-start-line="230" selection-start-column="45" selection-end-line="230" selection-end-column="45" />
               <folding>
                 <element signature="e#12#31#0#Twig" expanded="true" />
                 <element signature="e#7879#7883#0#Twig" expanded="true" />
@@ -384,12 +384,12 @@
       <workItem from="1562356233718" duration="242000" />
       <workItem from="1564065899641" duration="5286000" />
       <workItem from="1564087758185" duration="10259000" />
-      <workItem from="1564136488097" duration="15309000" />
+      <workItem from="1564136488097" duration="15568000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139417000" />
+    <option name="totallyTimeSpent" value="139676000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -770,8 +770,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/home/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="224" column="34" lean-forward="true" selection-start-line="224" selection-start-column="34" selection-end-line="224" selection-end-column="120" />
+        <state relative-caret-position="281">
+          <caret line="230" column="45" selection-start-line="230" selection-start-column="45" selection-end-line="230" selection-end-column="45" />
           <folding>
             <element signature="e#12#31#0#Twig" expanded="true" />
             <element signature="e#7879#7883#0#Twig" expanded="true" />
