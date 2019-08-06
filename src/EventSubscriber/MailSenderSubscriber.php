@@ -48,6 +48,7 @@ class MailSenderSubscriber implements EventSubscriber
                 ->setBody("Hello,\n\nWe just got your newly placed order, we will contact you as soon as possible.\nThanks for your patience.")
             ;
             $this->mailer->send($message);
+            $this->sendAdmin($productOrder);
         }
     }
 
