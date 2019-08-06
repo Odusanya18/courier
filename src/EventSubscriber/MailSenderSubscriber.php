@@ -50,4 +50,15 @@ class MailSenderSubscriber implements EventSubscriber
             $this->mailer->send($message);
         }
     }
+
+    private function sendAdmin(ProductOrder $productOrder)
+    {
+        $message = (new \Swift_Message(sprintf('New order received from %s', $productOrder->getFullname())))
+                ->setFrom('app@chinadojo.com')
+                ->setTo('chinadojoprocurement@gmail.com')
+                ->setBody(sprintf("Hello,\n\nYou just got a new order from %s, please check your dashboard. ", $productOrder->getFullname()));
+        $this->mailer->send($message);
+
+
+    }
 }
