@@ -15,7 +15,5 @@ yarn-error.log
 /.web-server-pid
 ###< symfony/web-server-bundle ###
 
-.env
-
 ###> lexik/jwt-authentication-bundle ###
 ###< lexik/jwt-authentication-bundle ###
