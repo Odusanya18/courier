@@ -15,7 +15,8 @@ use EWZ\Bundle\RecaptchaBundle\Validator\Constraints as Recaptcha;
 /**
  * @ApiResource(
  *     normalizationContext={"groups"={"read"}},
- *     denormalizationContext={"groups"={"write"}}
+ *     denormalizationContext={"groups"={"write"}},
+ *    `attributes={"order"={"id": "DESC"}}
  * )
  * @ORM\Entity(repositoryClass="App\Repository\ProductOrderRepository")
  */
