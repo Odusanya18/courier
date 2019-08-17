@@ -37,6 +37,9 @@ class ProductOrderController extends AbstractController
                     $productOrder->addProduct($product);
                 }
             }
+            if (empty($productOrder->getProducts())){
+                return $this->redirectToRoute('product_order_new');
+            }
             $entityManager->persist($productOrder);
             $entityManager->flush();
 
