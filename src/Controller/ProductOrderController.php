@@ -28,12 +28,14 @@ class ProductOrderController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
             foreach ($_POST['product_order_products'] as $record) {
-                $product = new Product();
-                $product->setName($record['name']);
-                $product->setLink($record['link']);
-                $image = $entityManager->getRepository(MediaObject::class)->find(intval($record['image']));
-                $product->setImage($image);
-                $productOrder->addProduct($product);
+                if ($record['name'] != '' || $record['link'] != ''){
+                    $product = new Product();
+                    $product->setName($record['name']);
+                    $product->setLink($record['link']);
+                    $image = $entityManager->getRepository(MediaObject::class)->find(intval($record['image']));
+                    $product->setImage($image);
+                    $productOrder->addProduct($product);
+                }
             }
             $entityManager->persist($productOrder);
             $entityManager->flush();
