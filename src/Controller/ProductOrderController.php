@@ -38,7 +38,7 @@ class ProductOrderController extends AbstractController
                     $productOrder->addProduct($product);
                 }
             }
-            if (empty($productOrder->getProducts())){
+            if ($productOrder->getProducts()->isEmpty()){
                 $form->get('products')->addError(new FormError('No products in order'));
                 return $this->redirectToRoute('product_order_new');
             }
