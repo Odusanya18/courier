@@ -40,7 +40,10 @@ class ProductOrderController extends AbstractController
             }
             if ($productOrder->getProducts()->isEmpty()){
                 $form->get('products')->addError(new FormError('No products in order'));
-                return $this->redirectToRoute('product_order_new');
+                return $this->render('product_order/new.html.twig', [
+                    'product_order' => $productOrder,
+                    'form' => $form->createView(),
+                ]);
             }
             $entityManager->persist($productOrder);
             $entityManager->flush();
