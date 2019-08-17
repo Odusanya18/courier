@@ -7,6 +7,7 @@ use App\Entity\Product;
 use App\Entity\ProductOrder;
 use App\Form\ProductOrderType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Form\FormError;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -38,6 +39,7 @@ class ProductOrderController extends AbstractController
                 }
             }
             if (empty($productOrder->getProducts())){
+                $form->get('products')->addError(new FormError('No products in order'));
                 return $this->redirectToRoute('product_order_new');
             }
             $entityManager->persist($productOrder);
