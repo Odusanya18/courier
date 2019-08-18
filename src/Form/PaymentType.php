@@ -17,8 +17,6 @@ class PaymentType extends AbstractType
             ->add('email')
             ->add('amount_paid')
             ->add('reason')
-            ->add('customer_id')
-            ->add('ticket_id')
             ->add('phone_number')
         ;
     }
