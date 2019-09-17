@@ -32,13 +32,13 @@ class Controller extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/post/{id}", name="post")
-     */
-    public function post(Post $post)
-    {
-        return $this->render('/home/generic.html.twig', [
-            'resource' => $post,
-        ]);
-    }
+    // /**
+    //  * @Route("/post/{id}", name="post")
+    //  */
+    // public function post(Post $post)
+    // {
+    //     return $this->render('/home/generic.html.twig', [
+    //         'resource' => $post,
+    //     ]);
+    // }
 }

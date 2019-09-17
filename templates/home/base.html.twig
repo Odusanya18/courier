@@ -18,7 +18,7 @@
                     <a class="ui white right corner label">
                         <i class="ui add icon"></i>
                     </a>
-                    <a href="//facebook.com/thechinadojo" class="item">
+                    <a href="//web.facebook.com/chinadojo1688/" class="item">
                         <i class="ui facebook icon"></i>
                     </a>
                     <a href="//twitter.com/thechinadojo" class="item">
@@ -45,6 +45,7 @@
                         <a class="ui teal button" href="//www.kuaidi100.com" rel="noopener" target="_blank">TRACKING</a>
                         <a href="{{ url('page', {'id':4}) }}" class="ui teal button">SERVICES</a>
                         <a href="{{ url('page', {'id':3}) }}" class="ui teal button">CONTACT US</a>
+                        <a href="{{ url('page', {'id':10}) }}" class="ui teal button">SHIPPING RATES</a>
                     </div>
                 </div>
             </div>
@@ -65,7 +66,6 @@
                                         {% for page in pages() %}
                                             <a href="{{ url('page', {'id':page.id}) }}" class="item">{{ page.title }}</a>
                                         {% endfor %}
-                                    <a href="{{ url('page', {'id':12}) }}" class="item">Complaints</a>
                                 </div>
                             </div>
                             <div class="column">
@@ -73,11 +73,7 @@
                                 <div class="ui header" style="color: #8a8a8a">INFO</div>
                                 <div class="ui list">
                                     <a href="{{ url('payment_new') }}" class="item">Payment Methods</a>
-                                    <a href="{{ url('page', {'id':5}) }}" class="item">Terms of Service</a>
-                                    <a href="{{ url('page', {'id':6}) }}" class="item">Privacy Policy</a>
                                     <a href="{{ url('page', {'id':7}) }}" class="item">FAQ</a>
-                                    <a href="" class="item">Blog</a>
-                                    <a href="{{ url('page', {'id':9}) }}" class="item">How it Works</a>
                                     <a href="{{ url('page', {'id':10}) }}" class="item">Shipping Rates</a>
 {#                                    <a href="" class="item">Complaint</a>#}
                                 </div>

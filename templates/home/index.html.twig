@@ -146,59 +146,7 @@
         </div>
     </div>
 
-    <div class="ui segment">
-        <div class="ui fluid container">
-            <div class="ui divided items">
-                <div class="item">
-                    <div class="ui four column grid" style="background-color: #27292a">
-                        <div class="row">
-                            <div class="sixteen wide column">
-                                <div class="ui basic segment">
-                                    <div class="ui basic segment"></div>
-                                    <h1 class="ui huge header" align="center" style="color: white; font-size: xx-large">Our Services.</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="ui basic segment">
-                                <img src="assets/img/shopping.png" class="ui centered small circular image">
-                            </div>
-                            <div class="ui basic segment">
-                                <p class="ui header" align="center" style="color: white">Shopping</p>
-                                <p align="center" style="color: #8a8a8a">Shop in Taobao, Tmall, 1688 & other China Websites. Choose from the wide variety of items and send us the links. Then sit back and relax, let ChinaDojo do the rest!</p>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="ui basic segment">
-                                <img src="assets/img/payment.png" class="ui centered small circular image">
-                            </div>
-                            <div class="ui basic segment">
-                                <p class="ui header" align="center" style="color: white">Payment</p>
-                                <p align="center" style="color: #8a8a8a">We can pay your supplier or send money to your relatives in china in minute, we have varies ways to pay Chinese company or individual, from Chinese Bank account payment, Alipay payment, Wechat payment and QQ payment!</p>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="ui basic segment">
-                                <img src="assets/img/shipping.jpg" class="ui centered small circular image">
-                            </div>
-                            <div class="ui basic segment">
-                                <p class="ui header" align="center" style="color: white">Shipping</p>
-                                <p align="center" style="color: #8a8a8a">Enjoy the lowest rates! We ship your package according to your chosen method ranging from express to sea shipping. We also offer Drop Shipping service!</p>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="ui basic segment">
-                                <img src="assets/img/whatwedo.png" class="ui centered small circular image">
-                            </div>
-                            <div class="ui basic segment">
-                                <p class="ui header" align="center" style="color: white">What we do</p>
-                                <p align="center" style="color: #8a8a8a">We buy the items for you, check each one carefully, and repack/combine multiple orders into a new box to save in shipping cost. Be assured that your parcel is protected.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="ui segment"
 
         <div class="ui fluid container">
             <div class="ui basic center aligned segment" style="background-color: teal; color: white;">
@@ -235,54 +183,7 @@
                 </div>
             </div>
         </div>
-        <div class="ui fluid container" style="background-color: #27292a; padding-left: 40px; padding-top: 30px; padding-bottom: 30px">
-            <div class="ui basic segment">
-                <div class="ui very relaxed middle aligned animated large list">
-                    <div class="item">
-                        <img src="assets/img/shopping.png" class="ui avatar image">
-                        <div class="content">
-                            <div class="header" style="color: teal">STORAGE</div>
-                            <div class="description" style="color:white;">We receive and keep each of your item till all your multiple items arrive before sending it to your country without charge.</div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="assets/img/shopping.png" class="ui avatar image">
-                        <div class="content">
-                            <div class="big header" style="color: teal">PAYMENT</div>
-                            <div class="description" style="color: white;">We accept Nigerian Bank Transfer For now, But other payment methods will be available soon and updated on the website.</div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="assets/img/shopping.png" class="ui avatar image">
-                        <div class=" middle aligned content">
-                            <div class="big header" style="color: teal">QUALITY CHECK</div>
-                            <div class="description" style="color: white">We don’t confirm quality of your products as we may not be able to confirm the quality of all items (e.g machines which require testing) but we confirm the quantity that arrives our office.</div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="assets/img/shopping.png" class="ui avatar image">
-                        <div class="middle aligned content">
-                            <div class="big header" style="color: teal">DELIVERY</div>
-                            <div class="description" style="color: white">Get Your Items Delivered To Your Doorstep, or choose Your Preffered Destination and wait till Your Items Gets Delivered To You</div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="assets/img/shopping.png" class="ui avatar image">
-                        <div class="content">
-                            <div class="big header" style="color: teal">ORDER TRACKING</div>
-                            <div class="description" style="color: white">Track Your Orders As They Leave Stores In China Till They Arrive In Nigeria And Get A Detailed Information Of The Whereabouts Of Your Goods</div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="assets/img/shopping.png" class="ui avatar image">
-                        <div class="content">
-                            <div class="big header" style="color: teal">CUSTOMER CARE</div>
-                            <div class="description" style="color: white">Enjoy Exclusive Customer Relationship Ranging From The Online Live Chat To Our Emails And Then To Our Calls. Right From The Moment You Place Your Order, We Keep You Updated!.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </div>
 </div>
 </div>
@@ -291,28 +192,7 @@
 <div class="ui basic segment">
     <div class="ui container">
         <div class="ui basic segment">
-            {% if posts %}
-            <div class="ui basic center aligned segment">
-                <div class="ui huge header">Latest Posts</div>
-            </div>
-            {% endif %}
             <div class="ui grid">
-                <div class="four column row">
-                    {% for post in posts %}
-                        <div class="column">
-                            <div class="ui segment">
-                                <div class="ui basic segment">
-                                    <a href="{{ path('post', {'id': post.id}) }}"><img class="ui centered medium image" src="assets/img/shopping.png">
-                                    <div class="ui header">{{ post.title }}</div></a>
-                                    <div class="metadata">
-                                        <span class="date">{{ post.description }}</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    {% endfor %}
-
-                </div>
                 <div class="five column padded row">
                     <div class="column">
                         <img src="assets/img/1688.gif">
