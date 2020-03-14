@@ -24,7 +24,7 @@ final class ResolveMediaObjectContentUrlSubscriber implements EventSubscriberInt
     public static function getSubscribedEvents(): array
     {
         return [
-            KernelEvents::VIEW => ['onPreSerialize', EventPriorities::PRE_SERIALIZE],
+            //KernelEvents::VIEW => ['onPreSerialize', EventPriorities::PRE_SERIALIZE],
         ];
     }
 
