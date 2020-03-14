@@ -16,6 +16,7 @@ use Symfony\Component\Security\Core\User\User;
 /**
  *
  * @ORM\Entity
+ *
  * @ApiResource(
  *     iri="http://schema.org/MediaObject",
  *     normalizationContext={
