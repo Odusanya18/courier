@@ -46,7 +46,8 @@ use Symfony\Component\Security\Core\User\User;
  *     },
  * )
  *
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="")
+ *
  * @ORM\Table(name="media_object")
  * @Vich\Uploadable
  */
