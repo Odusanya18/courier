@@ -45,7 +45,9 @@ use Symfony\Component\Security\Core\User\User;
  *         "get", "delete"
  *     },
  * )
+ *
  * @ORM\Entity
+ *
  * @Vich\Uploadable
  */
 class MediaObject
