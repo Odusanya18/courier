@@ -33,8 +33,6 @@ class ProductOrderController extends AbstractController
                     $product = new Product();
                     $product->setName($record['name']);
                     $product->setLink($record['link']);
-                    $image = $entityManager->getRepository(MediaObject::class)->find(intval($record['image']));
-                    $product->setImage($image);
                     $productOrder->addProduct($product);
                 }
             }
