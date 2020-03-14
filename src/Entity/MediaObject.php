@@ -15,7 +15,7 @@ use Symfony\Component\Security\Core\User\User;
 
 /**
  *
- * @ORM\Entity
+ * @ORM\Entity()
  *
  * @ApiResource(
  *     iri="http://schema.org/MediaObject",
