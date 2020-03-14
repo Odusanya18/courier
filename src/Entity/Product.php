@@ -42,15 +42,7 @@ class Product
      * @Groups({"read", "write"})
      */
     private $link;
-
-    /**
-     * @var MediaObject|null
-     *
-     * @ORM\ManyToOne(targetEntity=MediaObject::class)
-     * @ORM\JoinColumn(nullable=true)
-     * @Assert\NotBlank()
-     * @ApiProperty(iri="http://schema.org/image")
-     */
+    
     public $image;
 
     /**
