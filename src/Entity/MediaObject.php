@@ -46,7 +46,7 @@ use Symfony\Component\Security\Core\User\User;
  *     },
  * )
  *
- * @Entity
+ * @ORM\Entity
  *
  * @Vich\Uploadable
  */
