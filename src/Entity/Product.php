@@ -43,6 +43,15 @@ class Product
      */
     private $link;
     
+    
+    /**
+     * @var MediaObject|null
+     *
+     * @ORM\ManyToOne(targetEntity="App\Entity\MediaObject")
+     * @ORM\JoinColumn(nullable=true)
+     * @Assert\NotBlank()
+     * @ApiProperty(iri="http://schema.org/image")
+     */
     public $image;
 
     /**
